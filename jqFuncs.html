@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQfunctions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#hide").click(function(){
+          $("h1").hide();
+        })
+        $("#show").click(function(){
+          $("h1").show();
+        })
+        $("#toggle").click(function(){
+          $("h1").toggle();
+        })
+        $("#slide_up").click(function(){
+          $("#goodbye").slideUp();
+        })
+        $("#slide_down").click(function(){
+          $("#goodbye").slideDown();
+        })
+        $("#slide_tog").click(function(){
+          $("#goodbye").slideToggle();
+        })
+        $("#fade_in").click(function(){
+          $("#world").fadeIn();
+        })
+        $("#fade_out").click(function(){
+          $("#world").fadeOut();
+        })
+        $("#class").click(function(){
+          $("#seahawks").addClass("orange");
+        })
+        $("#before").click(function(){
+          $("#monday").before("Hi");
+        })
+        $("#after").click(function(){
+          $("#monday").after("Hello");
+        })
+        $("#append").click(function(){
+          $("#monday").append("append");
+        })
+        $("#html").click(function(){
+          $("#monday").html("dojo");
+        })
+        $("#attr").click(function(){
+          $("#couch").attr("height", "400");
+        })
+        $("#text").click(function(){
+          $("#couch").text("hello, my name is Inigo");
+        })
+        $("#value").click(function(){
+          $("input:text").val("Inigo Montoya");
+        })
+        $("#data").click(function(){
+          $("#world").data("message", "How's it going?");
+        })
+        $("#getData").click(function(){
+          alert($("#world").data("message"));
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <h1 id="goodbye">Goodbye</h1>
+    <button id="before" type="button" name="button">.before</button>
+    <button id="hide" type="button" name="button">.hide</button>
+    <button id="show" type="button" name="button">.show</button>
+    <button id="toggle" type="button" name="button">.toggle</button>
+    <button id="slide_up" type="button" name="button">slide_up</button>
+    <button id="slide_down" type="button" name="button">.slideDown</button>
+    <button id="slide_tog" type="button" name="button">.slideTog</button>
+    <h1 id="world">World</h1>
+    <button id="fade_in" type="button" name="button">.fadeIn</button>
+    <button id="fade_out" type="button" name="button">.fadeOut</button>
+    <button id="class" type="button" name="button">.addClass</button>
+    <h1 id="seahawks">Seahawks</h1>
+    <h1 id="monday">Monday green</h1>
+    <button id="after" type="button" name="button">.after</button>
+    <button id="append" type="button" name="button">.append</button>
+    <button id="html" type="button" name="button">.html</button>
+    <h1 id="couch">Couch blue</h1>
+    <button id="attr" type="button" name="button">.attr</button>
+    <button id="text" type="button" name="button">.text</button>
+    <p>Name: <input type="text" name="user"></p>
+    <button id="value">Set the value of the input field</button>
+    <button id="data" type="button" name="button">.data</button>
+    <button id="getData" type="button" name="button">getData</button>
+    <!-- <p>Name_two:  <input id="datas" type="text" name="user"></p> -->
+
+  </body>
+</html>
